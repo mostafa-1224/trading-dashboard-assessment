@@ -1,0 +1,196 @@
+.container {
+	background: var(--surface);
+	border-radius: 8px;
+	padding: 1rem;
+	border: 1px solid var(--border);
+}
+
+.title {
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--text-muted);
+	margin: 0 0 0.75rem 0;
+}
+
+/* ── Form ── */
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-bottom: 0.75rem;
+}
+
+.row {
+	display: flex;
+	gap: 0.375rem;
+}
+
+.select,
+.input {
+	background: var(--bg);
+	border: 1px solid var(--border);
+	border-radius: 5px;
+	color: var(--text-primary);
+	font-size: 0.8125rem;
+	padding: 0.375rem 0.5rem;
+	outline: none;
+	transition: border-color 0.15s ease;
+	min-width: 0;
+}
+
+.select {
+	flex: 1;
+	cursor: pointer;
+}
+
+.input {
+	flex: 1;
+}
+
+.select:focus,
+.input:focus {
+	border-color: var(--accent);
+}
+
+.addButton {
+	background: var(--accent);
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	padding: 0.375rem 0.75rem;
+	white-space: nowrap;
+	transition: opacity 0.15s ease;
+	flex-shrink: 0;
+}
+
+.addButton:hover {
+	opacity: 0.85;
+}
+
+.formError {
+	font-size: 0.75rem;
+	color: var(--red);
+	margin: 0;
+}
+
+/* ── Sections ── */
+.section {
+	margin-top: 0.625rem;
+}
+
+.sectionHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.375rem;
+}
+
+.sectionLabel {
+	font-size: 0.6875rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+	color: var(--text-muted);
+	display: block;
+	margin-bottom: 0.375rem;
+}
+
+.sectionHeader .sectionLabel {
+	margin-bottom: 0;
+}
+
+.clearButton {
+	background: none;
+	border: none;
+	color: var(--text-muted);
+	cursor: pointer;
+	font-size: 0.6875rem;
+	padding: 0;
+	transition: color 0.15s ease;
+}
+
+.clearButton:hover {
+	color: var(--red);
+}
+
+/* ── Alert rows ── */
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.alertRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.375rem 0.5rem;
+	border-radius: 5px;
+	background: var(--surface-hover);
+	border: 1px solid transparent;
+}
+
+.triggeredRow {
+	opacity: 0.5;
+}
+
+.alertInfo {
+	display: flex;
+	align-items: center;
+	gap: 0.375rem;
+	font-size: 0.8125rem;
+	min-width: 0;
+}
+
+.alertTicker {
+	font-weight: 600;
+	color: var(--text-primary);
+}
+
+.alertDir {
+	font-weight: 700;
+}
+
+.alertDir.up {
+	color: var(--green);
+}
+
+.alertDir.down {
+	color: var(--red);
+}
+
+.alertThreshold {
+	color: var(--text-secondary);
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+.deleteButton {
+	background: none;
+	border: none;
+	color: var(--text-muted);
+	cursor: pointer;
+	font-size: 1rem;
+	line-height: 1;
+	padding: 0 0.25rem;
+	flex-shrink: 0;
+	transition: color 0.15s ease;
+}
+
+.deleteButton:hover {
+	color: var(--red);
+}
+
+.empty {
+	font-size: 0.8125rem;
+	color: var(--text-muted);
+	margin: 0.25rem 0 0;
+}
